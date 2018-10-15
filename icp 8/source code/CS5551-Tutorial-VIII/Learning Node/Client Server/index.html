@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My AngularJS App</title>
+    <title>Angular APP</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app.css">
@@ -94,7 +94,7 @@
         <h1 align="absolute" style="text-align: center; color: #607d8b">Enter month and date for fact of that day!</h1>
         <input type="text" id="txt_placeName" placeholder="Enter month" style="margin-left: 100px"/>
         <input type="text" id="txt_searchFilter" placeholder="Enter date"/>
-        <button id="btn_getReview" ng-click="getVenues()">Get Facts</button>
+        <button id="btn_getReview" ng-click="getVenues()">Get Facts For That Day</button>
 
     </div>
     <div id="div_VenueList">
@@ -114,7 +114,7 @@
             <TR> <TD>Most recent review</TD> <TD>{{ReviewWithSentiment.reviewText}}</TD> </TR>
             <TR> <TD>Sentiment of the review</TD> <TD>{{ReviewWithSentiment.sentiment}}</TD> </TR>
             <TR> <TD>Sentiment Score of the review</TD> <TD>{{ReviewWithSentiment.score}}</TD> </TR>
-            <TR> <TH style="color: aliceblue; background:#1ab188" COLSPAN=2 BGCOLOR="#445553">{{ReviewWithSentiment.reviewText}}</TH> </TR>
+            <TR> <TH style="color: orangered; background:powderblue" COLSPAN=2 BGCOLOR="#445553">{{ReviewWithSentiment.reviewText}}</TH> </TR>
         </TABLE>
         <span ng-show="shows" style="text-align: center;">{{noText}}</span>
         </p>
