@@ -28,8 +28,8 @@
         .menu button{
             width: 419px;
             height:40px;
-            background:#3dc1e0;
-            border:  2px solid #ffffff;
+            background:orangered;
+            border:  3px solid #ffffff;
             cursor: pointer;
             border-radius: 4px;
             color: #ffffff;
@@ -91,7 +91,7 @@
 
 <div  ng-controller="View1Ctrl" style="top: 200px">
     <div class="menu" id="div_SearchContainer">
-        <h1 align="absolute" style="text-align: center; color: #607d8b">Enter month and date for fact of that day!</h1>
+        <h1 align="absolute" style="text-align: center; color: #607d8b; font-style: italic">Enter month and date for fact of that day!</h1>
         <input type="text" id="txt_placeName" placeholder="Enter month" style="margin-left: 100px"/>
         <input type="text" id="txt_searchFilter" placeholder="Enter date"/>
         <button id="btn_getReview" ng-click="getVenues()">Get Facts For That Day</button>
