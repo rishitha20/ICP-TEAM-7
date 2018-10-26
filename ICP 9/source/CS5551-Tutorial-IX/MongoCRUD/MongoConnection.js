@@ -3,7 +3,7 @@
  */
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var url = 'mongodb://root:password@1@ds135993.mlab.com:35993/icp8';
+var url = 'mongodb://rishu:rishitha20@ds143143.mlab.com:43143/icp9';
 MongoClient.connect(url, function(err, db) {
     assert.equal(null, err);
     console.log("Connected correctly to server.");

@@ -4,12 +4,12 @@
 
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var url = 'mongodb://root:password@1@ds135993.mlab.com:35993/icp8';
+var url = 'mongodb://rishu:rishitha20@ds143143.mlab.com:43143/icp9';
 
 MongoClient.connect(url, function(err, client) {
     if (err) throw err;
     console.log("connect to server");
-    var db = client.db('icp8');
+    var db = client.db('icp9');
     findUserwithMobile(db, function() {
         db.close();
     });

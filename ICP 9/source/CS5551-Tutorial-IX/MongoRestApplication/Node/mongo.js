@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 var express = require('express');
 var cors = require('cors');
 var app = express();
-var url = 'mongodb://root:password@1@ds135993.mlab.com:35993/icp8';
+var url = 'mongodb://rishu:rishitha20@ds143143.mlab.com:43143/icp9';
 //var url = 'mongodb://marmik:2621@ds051923.mlab.com:51923/demo';
 app.use(cors());
 app.use(bodyParser.json());
@@ -19,7 +19,7 @@ app.post('/register', function (req, res) {
             res.write("Failed, Error while connecting to Database");
             res.end();
         }
-        var db = client.db("icp8")
+        var db = client.db("icp9")
         insertDocument(db, req.body, function() {
             res.write("Successfully inserted");
             res.end();
@@ -27,13 +27,13 @@ app.post('/register', function (req, res) {
     });
 })
 var insertDocument = function(db, data, callback) {
-    db.collection('karthik').insertOne( data, function(err, result) {
+    db.collection('rishitha').insertOne( data, function(err, result) {
         if(err)
         {
             res.write("Registration Failed, Error While Registering");
             res.end();
         }
-        console.log("Inserted a document into the karthik collection.");
+        console.log("Inserted a document into the rishitha collection.");
         callback();
     });
 };
