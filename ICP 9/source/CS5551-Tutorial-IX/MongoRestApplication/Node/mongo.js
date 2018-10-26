@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 var express = require('express');
 var cors = require('cors');
 var app = express();
-var url = 'mongodb://karthik333:karthik333@ds137003.mlab.com:37003/aseicp9';
+var url = 'mongodb://root:password@1@ds135993.mlab.com:35993/icp8';
 //var url = 'mongodb://marmik:2621@ds051923.mlab.com:51923/demo';
 app.use(cors());
 app.use(bodyParser.json());
@@ -19,7 +19,7 @@ app.post('/register', function (req, res) {
             res.write("Failed, Error while connecting to Database");
             res.end();
         }
-        var db = client.db("aseicp9")
+        var db = client.db("icp8")
         insertDocument(db, req.body, function() {
             res.write("Successfully inserted");
             res.end();

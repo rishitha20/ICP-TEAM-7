@@ -3,26 +3,27 @@
  */
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var url = 'mongodb://karthik333:karthik333@ds137003.mlab.com:37003/aseicp9';
+var url = 'mongodb://root:password@1@ds135993.mlab.com:35993/icp8';
 
 var insertDocument = function(db, callback) {
-    db.collection('karthik').insertOne( {
+    db.collection('rishitha').insertOne( {
         "basicInfo" : {
-            "fName" : "Goku12",
-            "lName" : "vegita12",
-            "city" : "hyderabad",
-            "mobile":"7893424334"
+            "fName" : "bobba25",
+            "lName" : "sri15",
+            "city" : "vijayawada",
+            "mobile":"7893530439"
         }
     }, function(err, result) {
         assert.equal(err, null);
-        console.log("Inserted a document into the karthik collection.");
+        console.log("Inserted a document into the rishitha collection.");
         // callback();
     });
 };
 MongoClient.connect(url, function(err, client) {
-    if (err) throw err;
+    if (err)
+        throw err;
     console.log("connect to server");
-    var db = client.db('aseicp9');
+    var db = client.db('icp8');
     insertDocument(db, function() {
         db.close();
     });

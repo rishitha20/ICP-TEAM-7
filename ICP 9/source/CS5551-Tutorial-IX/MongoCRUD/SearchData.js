@@ -4,12 +4,12 @@
 
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var url = 'mongodb://karthik333:karthik333@ds137003.mlab.com:37003/aseicp9';
+var url = 'mongodb://root:password@1@ds135993.mlab.com:35993/icp8';
 
 MongoClient.connect(url, function(err, client) {
     if (err) throw err;
     console.log("connect to server");
-    var db = client.db('aseicp9');
+    var db = client.db('icp8');
     findUserwithMobile(db, function() {
         db.close();
     });
@@ -19,7 +19,7 @@ MongoClient.connect(url, function(err, client) {
 
 var findUserwithMobile = function(db,callback) {
     console.log("finding user with the mobile number");
-    var cursor = db.collection('karthik').find({"basicInfo.mobile":"7893424334"});
+    var cursor = db.collection('rishitha').find({"basicInfo.mobile":"7893530439"});
     cursor.each(function(err,doc) {
         assert.equal(err,null);
         if(doc != null)
@@ -33,7 +33,7 @@ var findUserwithMobile = function(db,callback) {
 }
 
 var findUser = function(db, callback) {
-    var cursor =db.collection('karthik').find( );
+    var cursor =db.collection('rishitha').find( );
     cursor.each(function(err, doc) {
         assert.equal(err, null);
         if (doc != null) {
@@ -44,7 +44,7 @@ var findUser = function(db, callback) {
     });
 };
 var findUserwithName = function(db,callback) {
-    var cursor = db.collection('karthik').find({"fname":"Goku"});
+    var cursor = db.collection('rishitha').find({"fname":"bobba"});
     cursor.each(function(err,doc) {
         assert.equal(err,null);
         if(doc != null)
@@ -58,7 +58,7 @@ var findUserwithName = function(db,callback) {
 
 
 var findUserwithUniversity = function(db, callback) {
-    var cursor = db.collection('karthik').find({"education.university":"UMKC"});
+    var cursor = db.collection('rishitha').find({"education.university":"UMKC"});
     cursor.each(function(err,doc){
         assert.equal(err,null);
         if(doc != null)
