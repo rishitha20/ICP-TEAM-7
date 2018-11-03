@@ -65,7 +65,7 @@
     <session id="98326343">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -153,6 +153,12 @@
               <item name="CS5551_Tutorial-X" type="462c0819:PsiDirectoryNode" />
               <item name="Top Hash Tags" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CS5551_Tutorial-X" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS5551_Tutorial-X" type="462c0819:PsiDirectoryNode" />
+              <item name="Top Hash Tags" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -195,12 +201,12 @@
       <workItem from="1540828128348" duration="14000" />
       <workItem from="1540913250873" duration="799000" />
       <workItem from="1540946661403" duration="734000" />
-      <workItem from="1541187410313" duration="3019000" />
+      <workItem from="1541187410313" duration="3648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13274000" />
+    <option name="totallyTimeSpent" value="13903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
